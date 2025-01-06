@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=stardom@400&f[]=merriweather-sans@400,500,600,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Works</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line">
+
+          </li>
+          <li>
+            <button class="header__translate">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button class="mobile-nav__translate">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/hero.JPG" alt="Profile Picture">
+        <section class="hero__text">
+          <h2 class="hero__subtitle">Hello! I'm William 😎</h2>
+          <h1 class="hero__title">Software <br> Engineer</h1>
+          <p class="hero__description">A passionate software engineer specialized in <br> <strong>game engineering</strong>.
+            Skilled in programming intuitive <br> <strong>UI/UX design and advanced physics simulation</strong>.
+          </p>
+          <a class="hero__btn btn" href="#">Contact Me</a>
+        </section>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">My name is William Moses. I am a Newcastle University graduate with a Bachelor of 
+            Science (BSc) Bachelor's degree in Computer Science, specialised in <strong>Game Engineering</strong>. 
+            I studied at Newcastle University in Newcastle upon Tyne, UK.</p>
+          <p class="about__description">Throughout my studies in Newcastle University, I had the opportunity to be create
+            multiple artefacts namely my dissertation about <a>Procedural Content Generation</a>, 
+            <a>Game Technology</a>, <a>Computer Graphics</a>, <a>UI/UX design</a>, and more.
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Skills</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">C#</li>
+              <li class="about__list">C++</li>
+              <li class="about__list">Unity</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">Unreal Engine</li>
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img 
+            class="about__img lazy" 
+            src="https://fakeimg.pl/1290x1595"
+            data-src="/profpic.jpg" 
+            alt="Profile Picture" 
+          />
+        </div>
+      </section>
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured project</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Procedural Content Generation</h2>
+          <a class="featured__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+            </svg>                           
+          </a>
+        </div>
+        <p class="featured__description">
+          This dissertation explores and investigates on using Convex Hull algorithm to introduce loop structures
+          to procedurally generated dungeons, with the aim of enhancing the gameplay experience presented by
+          dungeon exploration games. As a result of applying the Convex Hull algorithm, a dungeon with cyclic
+          loops between rooms can be produced while still maintaining great efficiency.
+        </p>
+        <p class="featured__description">
+          This study provides other researchers with information that could lead to further development of the
+          Procedural Content Generation (PCG) field in video games. Consequently, leading to the creation of
+          more engaging games and ultimately improving the industry.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Things learned</h3>
+            <ul class="featured__things-learned">
+              <li class="featured__info-list">Cellular Automata</li>
+              <li class="featured__info-list">Binary Space Partitioning</li>
+              <li class="featured__info-list">Random Walk Algorithm</li>
+              <li class="featured__info-list">Graham Scan Algorithm</li>
+              <li class="featured__info-list">Depth First Search</li>
+              <li class="featured__info-list">Convex Hull Problem</li>
+              <li class="featured__info-list">Axis-Aligned Bounding Box (AABB)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">December 2022 - May 2023</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img 
+              class="lazy"
+              src="https://fakeimg.pl/1920x986" 
+              data-src="./DissertationSS/DFSFixed.PNG" 
+              alt="DFS"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              class="lazy"
+              src="https://fakeimg.pl/1920x986" 
+              data-src="./DissertationSS/Manhattan Distance 2.PNG" 
+              alt="Manhattan Distance"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              class="lazy"
+              src="https://fakeimg.pl/1920x983" 
+              data-src="./DissertationSS/Second Hull.PNG" 
+              alt="Second Hull"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              class="lazy"
+              src="https://fakeimg.pl/1920x982" 
+              data-src="./DissertationSS/Second Hull 2.PNG" 
+              alt="Second Hull 2"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Magni tempora voluptas debitis, dignissimos temporibus, laborum rem distinctio praesentium inventore, 
+          repellat odit dicta! Expedita accusamus fugiat velit reprehenderit nostrum ipsum voluptates.
+        </p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="work__project-title">Procedural Content Generation</h3>
+          <div class="work__img-wrapper work__image1">
+            <img 
+              class="lazy" 
+              src="https://fakeimg.pl/1920x982"
+              data-src="./DissertationSS/Second Hull 2.PNG" 
+              alt="PCG Image"
+            />
+          </div>
+          <div class="work__project work__container1">
+            <h3 class="work__project-subtitle">Procedural Content Generation</h3>
+            <p class="work__project-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur nobis, quod rem aut quae iure. 
+              Possimus, perferendis provident illum excepturi facilis nisi harum totam! Soluta maiores praesentium 
+              rem adipisci commodi?
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Initial Truth</h3>
+          <div class="work__img-wrapper work__image2">
+            <img 
+              class="lazy" 
+              src="https://fakeimg.pl/1920x982"
+              data-src="./DissertationSS/Second Hull 2.PNG" 
+              alt="PCG Image"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Initial Truth</h3>
+            <p class="work__project-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur nobis, quod rem aut quae iure. 
+              Possimus, perferendis provident illum excepturi facilis nisi harum totam! Soluta maiores praesentium 
+              rem adipisci commodi?
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a> 
+          </div>
+          <!-- Project 3 -->
+          <h3 class="work__project-title">Bla Bla</h3>
+          <div class="work__img-wrapper work__image3">
+            <img 
+              class="lazy" 
+              src="https://fakeimg.pl/1920x982"
+              data-src="./DissertationSS/Second Hull 2.PNG" 
+              alt="PCG Image"
+            />
+          </div>
+          <div class="work__project work__container3">
+            <h3 class="work__project-subtitle">Bla Bla</h3>
+            <p class="work__project-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur nobis, quod rem aut quae iure. 
+              Possimus, perferendis provident illum excepturi facilis nisi harum totam! Soluta maiores praesentium 
+              rem adipisci commodi?
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a> 
+          </div>
+          <!-- Project 4 -->
+          <h3 class="work__project-title">Bla Bla Bla</h3>
+          <div class="work__img-wrapper work__image4">
+            <img 
+              class="lazy" 
+              src="https://fakeimg.pl/1920x982"
+              data-src="./DissertationSS/Second Hull 2.PNG" 
+              alt="PCG Image"
+            />
+          </div>
+          <div class="work__project work__container4">
+            <h3 class="work__project-subtitle">Bla Bla Bla</h3>
+            <p class="work__project-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur nobis, quod rem aut quae iure. 
+              Possimus, perferendis provident illum excepturi facilis nisi harum totam! Soluta maiores praesentium 
+              rem adipisci commodi?
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a> 
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Contact Me!</h2>
+        <p class="contact__description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Praesentium distinctio voluptates exercitationem sit eius doloremque non reiciendis. 
+          Ad, ut, recusandae dicta unde quam magnam quae architecto voluptatibus molestias, ipsum animi.
+        </p>
+        <a class="contact__btn btn" 
+        href="mailto:wmoses5k@gmail.com"
+        target="_blank">Message Me</a>
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">- William Moses -</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

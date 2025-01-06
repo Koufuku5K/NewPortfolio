@@ -1,0 +1,157 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__title {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+}
+
+.about__description {
+    max-width: 60ch;
+    font-size: var(--size-s);
+    color: var(--clr-slate400);
+    text-align: justify;
+    text-justify: auto;
+}
+
+.about__hr {
+    border-color: var(--clr-slate400);
+}
+
+.about__subtitle {
+    font-size: var(--size-sm);
+    color: var(--clr-light);
+}
+
+.about__ul-container {
+    display: flex;
+}
+
+.about__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style-type: '\1F31F';
+    padding-left: 1.5em;
+    flex: 1;
+}
+
+.about__list {
+    font-size: var(--size-s);
+    color: var(--clr-slate400);
+}
+
+.about__list::before {
+    content: '';
+    margin-left: 0.5em;
+}
+
+/* xs screens */
+@media (min-width: 475px) {
+    .about {
+        gap: 1.5rem;
+    }
+    
+    .about__content {
+        gap: 1.5rem;
+    }
+    
+    .about__title {
+        font-size: var(--size-3xl);
+    }
+    
+    .about__description {
+        font-size: var(--size-base);
+    }
+    
+    .about__subtitle {
+        font-size: var(--size-base);
+    }
+    
+    .about__list {
+        font-size: var(--size-base);
+    } 
+}
+
+/* s screens */
+@media (min-width: 640px) {
+    .about__img-wrapper {
+        margin: 0 auto;
+    }
+
+    .about__img {
+        width: 25.6rem; /* width divided by 16 equals rem */
+
+    }
+}
+
+/* m screens */
+/* @media (min-width: 768px) {
+    
+} */
+
+/* l screens */
+@media (min-width: 1224px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about__title {
+        font-size: var(--size-4xl);
+    }
+    
+    .about__description {
+        font-size: var(--size-l);
+    }
+    
+    .about__subtitle {
+        font-size: var(--size-l);
+    }
+    
+    .about__list {
+        font-size: var(--size-l);
+    }
+}
+
+/* xl screens */
+@media (min-width: 1280px) {
+    .about__content {
+        gap: 2rem;
+    }
+
+    .about__title {
+        font-size: var(--size-5xl);
+    }
+    
+    .about__description {
+        font-size: var(--size-xl);
+    }
+    
+    .about__subtitle {
+        font-size: var(--size-xl);
+    }
+    
+    .about__list {
+        font-size: var(--size-xl);
+    }
+
+    .about__img {
+        width: 25.6rem;
+    }
+}
+
+/* 2xl screens */
+/* @media (min-width: 1536px) {
+    
+} */
