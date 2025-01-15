@@ -1,0 +1,144 @@
+.dissertation-hero {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.dissertation-hero__img {
+    width: 37.5%;
+    height: 25%;
+}
+
+.dissertation-hero__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.dissertation-hero__subtitle {
+    color: var(--clr-slate400);
+    font-size: var(--size-base);
+    line-height: 0.9;
+}
+
+.dissertation-hero__title {
+    color: var(--clr-slate400);
+    text-transform: uppercase;
+    font-size: var(--size-4xl);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+}
+
+.dissertation-hero__description {
+    max-width: 60ch;
+    font-size: var(--size-s);
+    color: var(--clr-slate400);
+}
+
+.dissertation-hero__btn {
+    text-transform: capitalize;
+    font-size: var(--size-s);
+}
+
+/* xs screens */
+@media (min-width: 475px) {
+    .dissertation-hero {
+        gap: 1.5rem;
+    }
+    
+    .dissertation-hero__img {
+        width: 37.5%;
+        height: 25%;
+    }
+    
+    .dissertation-hero__subtitle {
+        font-size: var(--size-l);
+    }
+    
+    .dissertation-hero__title {
+        font-size: var(--size-5xl);
+    }
+    
+    .dissertation-hero__description {
+        font-size: var(--size-base);
+    }
+    
+    .dissertation-hero__btn {
+        font-size: var(--size-base);
+    }
+}
+
+/* s screens */
+/* @media (min-width: 640px) {
+    
+} */
+
+/* m screens */
+/* @media (min-width: 768px) {
+    
+} */
+
+/* l screens */
+@media (min-width: 1224px) {
+    .dissertation-hero__img {
+        width: 37.5%;
+        height: 25%;
+    }
+    
+    .dissertation-hero__subtitle {
+        font-size: var(--size-2xl);
+    }
+    
+    .dissertation-hero__title {
+        font-size: var(--size-7xl);
+    }
+    
+    .dissertation-hero__description {
+        font-size: var(--size-l);
+    }
+    
+    .dissertation-hero__btn {
+        font-size: var(--size-l);
+    }
+}
+
+/* xl screens */
+@media (min-width: 1280px) {
+    .dissertation-hero {
+        gap: 2rem;
+    }
+
+    .dissertation-hero__img {
+        width: 37.5%;
+        height: 25%;
+    }
+    
+    .dissertation-hero__subtitle {
+        font-size: var(--size-4xl);
+    }
+    
+    .dissertation-hero__title {
+        font-size: var(--size-9xl);
+    }
+    
+    .dissertation-hero__description {
+        font-size: var(--size-xl);
+    }
+    
+    .dissertation-hero__btn {
+        font-size: var(--size-xl);
+    }
+}
+
+/* 2xl screens */
+/* @media (min-width: 1536px) {
+    
+} */
