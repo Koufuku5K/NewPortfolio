@@ -14,11 +14,11 @@
 }
 
 .dissertation-hero__text {
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -41,11 +41,14 @@
     max-width: 60ch;
     font-size: var(--size-s);
     color: var(--clr-slate400);
+    margin: 0.125rem 0;
+    text-align: justify;
+    text-justify: auto;
 }
 
-.dissertation-hero__btn {
-    text-transform: capitalize;
+.dissertation-hero__list {
     font-size: var(--size-s);
+    color: var(--clr-slate400);
 }
 
 /* xs screens */
@@ -69,9 +72,10 @@
     
     .dissertation-hero__description {
         font-size: var(--size-base);
+        margin: 0.125rem 0;
     }
-    
-    .dissertation-hero__btn {
+
+    .dissertation-hero__list {
         font-size: var(--size-base);
     }
 }
@@ -103,9 +107,10 @@
     
     .dissertation-hero__description {
         font-size: var(--size-l);
+        margin: 0.25rem 0;
     }
-    
-    .dissertation-hero__btn {
+
+    .dissertation-hero__list {
         font-size: var(--size-l);
     }
 }
@@ -131,9 +136,10 @@
     
     .dissertation-hero__description {
         font-size: var(--size-xl);
+        margin: 0.5rem 0;
     }
-    
-    .dissertation-hero__btn {
+
+    .dissertation-hero__list {
         font-size: var(--size-xl);
     }
 }
